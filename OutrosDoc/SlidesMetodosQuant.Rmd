@@ -1,0 +1,36 @@
+---
+title: 'Métodos Quantitativos em Finanças.'
+author: "Jailson Duarte"
+date: "`r format(Sys.time(), '%d %B de %Y')`"
+output:
+  beamer_presentation:
+    latex_engine: pdflatex
+    slide_level: 1
+    theme: Gfic
+encoding: UTF-8
+institute: GFIC - UFPB
+lang: pt-BR
+csl: ReferenciasABNT.csl
+bibliography: BibliografiaApresentacao.bib
+header-includes:
+  - \usepackage{ragged2e}
+  - \usepackage{graphicx}
+  - \usepackage{tikzpagenodes}
+  - \usetikzlibrary{calc}
+  - \usepackage{titling}
+  
+---
+
+
+# Definindo a Temática
+
+## Reprodutibilidade da Pesquisa em Finanças
+Replicáveis se, independente do pequisador, for possível chegar nos mesmos resultados utilizando-se dos mesmos procedimentos que o trabalho original .
+
+\vspace{0.5cm}
+Dados e códigos disponíveis devem ser suficientes para reconstruir a pesquisa.
+
+
+# Bibliografia
+\scriptsize
+

@@ -1,0 +1,139 @@
+
+/* === Estilo geral: fundo preto e letras brancas === */
+.remark-slide-content {
+  background-color: #FAFAFA;
+  color: #1A292C;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+/* Títulos em verde petróleo */
+.remark-slide-content h1,
+.remark-slide-content h2 {
+  color: #2C7865;
+  text-shadow: none;
+  text-align: center;
+  
+}
+
+
+/* Títulos em verde petróleo */
+.remark-slide-content h3,
+.remark-slide-content h4 {
+  color: #2C7865;
+  text-shadow: none;
+  text-align: left;
+  
+}
+
+
+
+/* Links em verde folha */
+.remark-slide-content a {
+  color: #3FA796;
+}
+
+/* Código com fundo claro e destaque */
+.remark-code,
+.remark-inline-code {
+  background: #FAFAFA;
+  color: #3FA796;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+
+/* Notas do apresentador */
+.remark-notes {
+  background-color: #FAFAFA;
+  color: #1A292C;
+}
+
+
+/* === ESTILO DA TELA DE APRESENTAÇÃO (APENAS ELA) === */
+.title-slide {
+  background-color: #29968e;
+  position: relative;
+}
+
+/* Títulos da tela de título em branco */
+.title-slide h1,
+.title-slide h2,
+.title-slide h3,
+.title-slide h4 {
+  color: #ffffff;
+}
+
+
+.remark-slide-content::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 50px;               /* largura do container do logo */
+  height: 20px;              /* altura do container do logo */
+  background-image: url("logo/logoGfic.jpg");
+  background-size: contain;  /* redimensiona o logo para caber */
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: 2;
+}
+
+
+/* Nome do autor centralizado */
+.remark-slide-content::before {
+  content: "Jailson Duarte";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #ffffff; /* azul */
+  z-index: 2;
+}
+
+
+
+/* Oculta o número do slide na capa */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+
+/* === Rodapé comum para todos os slides === */
+
+.remark-slide-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1B4965; /* Cor de fundo do rodapé */
+  z-index: 1;
+}
+
+
+/* Número do slide à direita */
+.remark-slide-number {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  z-index: 2;
+  opacity: 1;  /* garante que o número esteja visível */
+}
+
+/* Remove o número da página na tela de título, se quiser */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+/* Aumentar o tamanho das fórmulas matemáticas */
+.MathJax, .math {
+  font-size: 1em !important;
+}
+
+
